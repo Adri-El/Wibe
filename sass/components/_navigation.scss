@@ -1,0 +1,41 @@
+.nav{
+    padding-top: 2.3rem;
+    color: $color-white;
+    font-size: 1.3rem;
+    grid-column: 3/5;
+    grid-row: 1/2;
+    font-family: 'Montserrat', sans-serif;
+    //background-color: red;
+
+
+    ul{
+        list-style: none;
+        display: flex;
+        //background-color: greenyellow;
+        justify-content: space-around;
+        
+  
+    }
+
+    ul li{
+        
+        &:hover{
+            cursor: pointer;
+            color: $color-black;
+        }
+
+    }
+
+    ul li:not(:last-child){
+        margin-right: 2rem;
+
+       
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        display: none;
+        
+    }
+
+
+}

@@ -1,0 +1,99 @@
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    height: 100vh;
+    width: 100%;
+    background-color: $color-black-transparent-darker;
+    padding: 2rem;
+    visibility: hidden;
+    opacity: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    &__close:link,
+    &__close:visited{
+        position: absolute;
+        right: 2.5rem;
+        top: 2.5rem;
+        color: $color-grey-light2;
+        text-decoration: none;
+        font-size: 4rem;
+        line-height: 1;
+
+        &:hover{
+            color: $color-white;
+        }
+          
+    }
+
+    &__arr{
+        position: absolute;
+        font-size: 8rem;
+        color: $color-white;
+        line-height: 1;
+        transform: translate(-50%, -50%);
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__arr-left{
+        top: 50%;
+        left: 2.5rem;
+    }
+
+    &__arr-right{
+        top: 50%;
+        right: 2.5rem;
+
+    }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img{
+        height: 42vw;
+        width: 65%;
+        margin-bottom: 2rem;
+
+    }
+
+    &__sub-img{
+        justify-self: end;
+        display: flex;
+
+        & > *:not(:last-child){
+            margin-right: 2rem;
+        }
+
+        &-item{
+            height: 7rem;
+            width: 7rem;
+
+
+            &-img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                display: block;
+
+            }
+
+        }
+
+    }
+
+   
+
+}

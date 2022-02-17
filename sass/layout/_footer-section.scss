@@ -1,0 +1,12 @@
+.footer-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: $color-footer-bg;
+
+    @media only screen and (max-width: $bp-big) {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 3rem;
+        justify-items: center;
+        
+    }
+}

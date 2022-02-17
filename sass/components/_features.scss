@@ -1,0 +1,40 @@
+.features{
+
+    &__box{
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 6rem 6rem;
+        transform: translateY(50%);
+        opacity: 0;
+        transition: transform 500ms ease-in, opacity 500ms ease-in;
+
+
+       &-icon{
+           display: block;
+           width: 12.5rem;
+        }
+
+       &-1:hover{
+           background-color: #FFE8C2;
+
+       }
+
+       &-2:hover{
+           background-color: #AF7595;
+           
+       }
+
+       &-3:hover{
+           background-color: #A7CCED;
+           
+        }
+
+    }
+
+    &__box.goUp{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}

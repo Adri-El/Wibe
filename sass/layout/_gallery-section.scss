@@ -1,0 +1,29 @@
+.gallery-section{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 35vh);
+    grid-gap: 2rem;
+
+    @media only screen and (max-width: $bp-largest) {
+        grid-template-rows: repeat(2, 20vh);
+        
+    }
+
+
+    @media only screen and (max-width: $bp-large) {
+        grid-template-rows: repeat(2, 20vh);
+        
+    }
+
+    @media only screen and (max-width: $bp-big) {
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 20vh);
+       
+    
+    }
+
+   
+
+}

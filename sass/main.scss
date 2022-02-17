@@ -1,0 +1,29 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/duties";
+@import "components/navigation";
+@import "components/work";
+@import "components/features";
+@import "components/testimony";
+@import "components/gallery";
+@import "components/popup";
+@import "components/form";
+@import "components/footer";
+@import "components/responsive_navigation";
+
+@import "layout/header";
+@import "layout/duties-section";
+@import "layout/number-section";
+@import "layout/work-section";
+@import "layout/features-section";
+@import "layout/testimony-section";
+@import "layout/gallery-section";
+@import "layout/form-section";
+@import "layout/footer-section";

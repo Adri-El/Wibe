@@ -1,0 +1,34 @@
+.footer{
+    padding: 6rem;
+
+    &__logo{
+        height: 9rem;
+        width: 9rem;
+
+        &-img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__box{
+        text-align: center;
+
+        &-item{
+            & > *:not(:last-child){
+                margin-bottom: 1rem;
+            }
+
+            &-list{
+                list-style-type: none;
+
+            }
+        }
+    }
+
+    &__link:link,
+    &__link:visited{
+        color: $color-white;
+    }
+}

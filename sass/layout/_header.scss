@@ -1,0 +1,78 @@
+.header{
+    display: grid;
+    grid-template-columns: 5rem min-content repeat(4, 1fr); //repeat(2, max-content);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 6rem;
+    height: 95vh;
+    width: 100%;
+    @include bg-img(url(../images/mount.jpg));
+    padding-top: 2rem;
+    transition: all ease-in 1000ms;
+
+    &__logo-box{
+        grid-column: 2/3;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    &__logo{
+        height: 7rem;
+        width: 7rem;
+      // object-fit: cover;
+      // width: 100%;
+      // height: 100%;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__arr{
+        color: $color-white;
+        align-self: center;
+       
+        font-size: 7rem;
+        line-height: 0.5;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+
+        &:hover{
+            background-color: $color-black-transparent;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            display: none;
+            
+        }
+    }
+
+
+    &__arr-left{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        justify-self: start;
+    }
+
+    &__arr-right{
+        grid-row: 2/3;
+        grid-column: 6/-1;
+        justify-self: end;
+        
+    }
+
+    .header__heading{
+        color: $color-white;
+        grid-row: 2/3;
+        grid-column: 3/6;
+        text-align: end;
+        align-self: center;
+
+        @media only screen and (max-width: $bp-big){
+            grid-column: 1/6;
+        }
+    }
+}
